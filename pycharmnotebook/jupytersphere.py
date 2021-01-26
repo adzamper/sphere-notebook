@@ -456,7 +456,7 @@ def sphereresponse(aw, sigob, sigsp, thickob, depth, txheight, dipw):
 def SphereWidget():
     i = interact(
         sphereresponse,
-        aw=FloatSlider(min=1.0, max=300.0, step=1, value=100, description="$a$"),
+        aw=FloatSlider(min=40.0, max=400.0, step=1, value=100, description="$a$"),
 
         sigob=FloatSlider(min=0.001, max=5.0, step=.01, value=0.03, description="$\sigma_{ob}$"),
 
